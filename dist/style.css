@@ -7443,7 +7443,6 @@ body.logged-in .YouTubePopUp-Wrap {
     color: white;
     border: none;
     font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
     outline: none;
     font-weight: 600;
     letter-spacing: 0.01em;
@@ -7452,6 +7451,7 @@ body.logged-in .YouTubePopUp-Wrap {
     display: block;
     line-height: 60px;
     text-align: center;
+    border-radius: 50px;
 }
 
 .button--small .button__input,
@@ -7572,6 +7572,7 @@ body.logged-in .YouTubePopUp-Wrap {
     border: 1px dotted rgba(183, 184, 184, 0.5);
     padding: 15px;
     position: relative;
+    margin-bottom: 80px !important;
 }
 
 .contact-form .help-block {
@@ -7943,10 +7944,12 @@ body.logged-in .YouTubePopUp-Wrap {
 
 .footer__message {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 22px;
-    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 30px 0;
     letter-spacing: 0.01em;
+    color: #555555;
 }
 
 .footer__scroll-top {
@@ -8747,14 +8750,14 @@ a[href^="https://maps.google.com/maps"] {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: #252525;
     z-index: 9999;
     display: none;
     -webkit-perspective: 1000px;
 }
 
 .js-preload-me .preloader {
-    display: block;
+    display: flex;
 }
 
 .preloader__circle {
@@ -9163,7 +9166,7 @@ a[href^="https://maps.google.com/maps"] {
 }
 
 .section--large {
-    padding: 170px 0;
+    padding: 100px 0;
 }
 
 .section--no-pb {
@@ -10014,7 +10017,7 @@ div.video:before {
         text-align: center;
     }
     .section--large {
-        padding: 100px 0;
+        padding: 75px 0;
     }
     .slider__secondary {
         display: none !important;
@@ -10049,9 +10052,6 @@ div.video:before {
     .contact-form__form {
         padding: 15px;
         box-shadow: none;
-    }
-    .footer__scroll-top {
-        top: -80px;
     }
     .header {
         padding: 35px 13px;
@@ -10131,6 +10131,17 @@ div.video:before {
 }
 
 @media all and (max-width: 480px) {
+    .hero {
+        background-position: right;
+        background-attachment: fixed;
+    }
+    .slider-subtitle {
+        font-size: 19px;
+    }
+    .footer__message {
+        font-size: 11px;
+        line-height: 14px;
+    }
     .button--inline {
         display: block;
         margin-bottom: 30px;
@@ -10146,7 +10157,8 @@ div.video:before {
         padding: 60px 0;
     }
     .slider__title {
-        font-size: 20px;
+        font-size: 32px;
+        padding: 11px;
     }
     .slider .owl-dots {
         display: none;
